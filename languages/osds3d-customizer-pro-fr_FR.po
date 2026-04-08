@@ -1,0 +1,80 @@
+# OSDS3D Customizer Pro - Français
+msgid ""
+msgstr ""
+"Project-Id-Version: OSDS3D Customizer Pro 1.0.0\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# Menu
+msgid "OSDS3D"
+msgstr "OSDS3D"
+
+msgid "Dashboard"
+msgstr "Tableau de bord"
+
+msgid "Designs"
+msgstr "Créations"
+
+msgid "Orders"
+msgstr "Commandes"
+
+msgid "Fonts"
+msgstr "Polices"
+
+msgid "Cliparts"
+msgstr "Images"
+
+msgid "Settings"
+msgstr "Paramètres"
+
+msgid "Logs"
+msgstr "Journaux"
+
+# Customizer
+msgid "Add Text"
+msgstr "Ajouter du texte"
+
+msgid "Add Image"
+msgstr "Ajouter une image"
+
+msgid "Add Shape"
+msgstr "Ajouter une forme"
+
+msgid "Upload Image"
+msgstr "Télécharger une image"
+
+msgid "Choose from Library"
+msgstr "Choisir dans la bibliothèque"
+
+msgid "Save Design"
+msgstr "Sauvegarder"
+
+msgid "Add to Cart"
+msgstr "Ajouter au panier"
+
+msgid "Customize"
+msgstr "Personnaliser"
+
+msgid "Reset"
+msgstr "Réinitialiser"
+
+msgid "Undo"
+msgstr "Annuler"
+
+msgid "Redo"
+msgstr "Rétablir"
+
+# Messages
+msgid "Design saved successfully"
+msgstr "Création sauvegardée avec succès"
+
+msgid "Error saving design"
+msgstr "Erreur lors de la sauvegarde"
+
+msgid "Please select a product"
+msgstr "Veuillez sélectionner un produit"
+
+msgid "Are you sure you want to delete this item?"
+msgstr "Êtes-vous sûr de vouloir supprimer cet élément ?"

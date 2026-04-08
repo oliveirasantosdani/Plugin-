@@ -1,0 +1,638 @@
+/**
+ * Styles Admin OSDS3D Customizer Pro
+ * @package OSDS3D_Customizer
+ * @version 1.0.0
+ */
+
+/* ============================================
+   VARIABLES CSS
+   ============================================ */
+:root {
+    --osds3d-primary: #2271b1;
+    --osds3d-primary-hover: #135e96;
+    --osds3d-secondary: #dcdcde;
+    --osds3d-success: #00a32a;
+    --osds3d-warning: #dba617;
+    --osds3d-danger: #d63638;
+    --osds3d-info: #72aee6;
+    --osds3d-dark: #1d2327;
+    --osds3d-light: #f0f0f1;
+    --osds3d-border: #c3c4c7;
+    --osds3d-shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* ============================================
+   LAYOUT GÉNÉRAL
+   ============================================ */
+.osds3d-admin-page {
+    max-width: 1400px;
+    margin: 20px 20px 20px 0;
+}
+
+.osds3d-admin-header {
+    background: #fff;
+    border: 1px solid var(--osds3d-border);
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px var(--osds3d-shadow);
+}
+
+.osds3d-admin-header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: var(--osds3d-dark);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.osds3d-admin-header h1 .dashicons {
+    color: var(--osds3d-primary);
+}
+
+.osds3d-admin-content {
+    background: #fff;
+    border: 1px solid var(--osds3d-border);
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px var(--osds3d-shadow);
+}
+
+/* ============================================
+   GRILLE RESPONSIVE
+   ============================================ */
+.osds3d-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.osds3d-grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.osds3d-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.osds3d-grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1200px) {
+    .osds3d-grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .osds3d-grid-2,
+    .osds3d-grid-3,
+    .osds3d-grid-4 {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ============================================
+   CARTES (CARDS)
+   ============================================ */
+.osds3d-card {
+    background: #fff;
+    border: 1px solid var(--osds3d-border);
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0 1px 3px var(--osds3d-shadow);
+    transition: box-shadow 0.3s ease;
+}
+
+.osds3d-card:hover {
+    box-shadow: 0 4px 12px var(--osds3d-shadow);
+}
+
+.osds3d-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--osds3d-light);
+}
+
+.osds3d-card-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--osds3d-dark);
+    margin: 0;
+}
+
+.osds3d-card-body {
+    color: #50575e;
+    line-height: 1.6;
+}
+
+.osds3d-card-footer {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid var(--osds3d-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ============================================
+   STATISTIQUES (STATS)
+   ============================================ */
+.osds3d-stat-box {
+    background: linear-gradient(135deg, var(--osds3d-primary) 0%, var(--osds3d-primary-hover) 100%);
+    color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 12px var(--osds3d-shadow);
+}
+
+.osds3d-stat-box.success {
+    background: linear-gradient(135deg, var(--osds3d-success) 0%, #008a24 100%);
+}
+
+.osds3d-stat-box.warning {
+    background: linear-gradient(135deg, var(--osds3d-warning) 0%, #c69214 100%);
+}
+
+.osds3d-stat-box.danger {
+    background: linear-gradient(135deg, var(--osds3d-danger) 0%, #b32d2e 100%);
+}
+
+.osds3d-stat-number {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 10px 0;
+    line-height: 1;
+}
+
+.osds3d-stat-label {
+    font-size: 14px;
+    opacity: 0.9;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.osds3d-stat-icon {
+    font-size: 32px;
+    opacity: 0.3;
+    margin-bottom: 10px;
+}
+
+/* ============================================
+   TABLEAUX
+   ============================================ */
+.osds3d-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+.osds3d-table thead {
+    background: var(--osds3d-light);
+}
+
+.osds3d-table th {
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+    color: var(--osds3d-dark);
+    border-bottom: 2px solid var(--osds3d-border);
+}
+
+.osds3d-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid var(--osds3d-light);
+}
+
+.osds3d-table tbody tr:hover {
+    background: #f6f7f7;
+}
+
+.osds3d-table-striped tbody tr:nth-child(even) {
+    background: #fafafa;
+}
+
+/* ============================================
+   BADGES
+   ============================================ */
+.osds3d-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.osds3d-badge-primary {
+    background: var(--osds3d-primary);
+    color: #fff;
+}
+
+.osds3d-badge-success {
+    background: var(--osds3d-success);
+    color: #fff;
+}
+
+.osds3d-badge-warning {
+    background: var(--osds3d-warning);
+    color: #fff;
+}
+
+.osds3d-badge-danger {
+    background: var(--osds3d-danger);
+    color: #fff;
+}
+
+.osds3d-badge-info {
+    background: var(--osds3d-info);
+    color: #fff;
+}
+
+.osds3d-badge-secondary {
+    background: var(--osds3d-secondary);
+    color: var(--osds3d-dark);
+}
+
+/* ============================================
+   BOUTONS
+   ============================================ */
+.osds3d-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.osds3d-btn-primary {
+    background: var(--osds3d-primary);
+    color: #fff;
+}
+
+.osds3d-btn-primary:hover {
+    background: var(--osds3d-primary-hover);
+    color: #fff;
+}
+
+.osds3d-btn-success {
+    background: var(--osds3d-success);
+    color: #fff;
+}
+
+.osds3d-btn-success:hover {
+    background: #008a24;
+    color: #fff;
+}
+
+.osds3d-btn-danger {
+    background: var(--osds3d-danger);
+    color: #fff;
+}
+
+.osds3d-btn-danger:hover {
+    background: #b32d2e;
+    color: #fff;
+}
+
+.osds3d-btn-secondary {
+    background: var(--osds3d-secondary);
+    color: var(--osds3d-dark);
+}
+
+.osds3d-btn-secondary:hover {
+    background: #c3c4c7;
+}
+
+.osds3d-btn-small {
+    padding: 6px 12px;
+    font-size: 12px;
+}
+
+.osds3d-btn-large {
+    padding: 14px 28px;
+    font-size: 16px;
+}
+
+/* ============================================
+   FORMULAIRES
+   ============================================ */
+.osds3d-form-group {
+    margin-bottom: 20px;
+}
+
+.osds3d-form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--osds3d-dark);
+}
+
+.osds3d-form-control {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid var(--osds3d-border);
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.osds3d-form-control:focus {
+    border-color: var(--osds3d-primary);
+    outline: none;
+    box-shadow: 0 0 0 1px var(--osds3d-primary);
+}
+
+.osds3d-form-help {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #646970;
+}
+
+/* ============================================
+   ONGLETS (TABS)
+   ============================================ */
+.osds3d-tabs {
+    display: flex;
+    gap: 5px;
+    border-bottom: 2px solid var(--osds3d-border);
+    margin-bottom: 30px;
+}
+
+.osds3d-tab {
+    padding: 12px 24px;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #646970;
+    transition: all 0.3s ease;
+}
+
+.osds3d-tab:hover {
+    color: var(--osds3d-primary);
+}
+
+.osds3d-tab.active {
+    color: var(--osds3d-primary);
+    border-bottom-color: var(--osds3d-primary);
+}
+
+.osds3d-tab-content {
+    display: none;
+}
+
+.osds3d-tab-content.active {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ============================================
+   ALERTES
+   ============================================ */
+.osds3d-alert {
+    padding: 15px 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.osds3d-alert-success {
+    background: #e7f7ed;
+    border-left: 4px solid var(--osds3d-success);
+    color: #00532a;
+}
+
+.osds3d-alert-warning {
+    background: #fcf9e8;
+    border-left: 4px solid var(--osds3d-warning);
+    color: #6c5d0f;
+}
+
+.osds3d-alert-danger {
+    background: #fcf0f1;
+    border-left: 4px solid var(--osds3d-danger);
+    color: #8a2424;
+}
+
+.osds3d-alert-info {
+    background: #e5f5fa;
+    border-left: 4px solid var(--osds3d-info);
+    color: #135e96;
+}
+
+/* ============================================
+   LOADER / SPINNER
+   ============================================ */
+.osds3d-loader {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid var(--osds3d-light);
+    border-top-color: var(--osds3d-primary);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.osds3d-loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999;
+}
+
+.osds3d-loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid var(--osds3d-light);
+    border-top-color: var(--osds3d-primary);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* ============================================
+   PREVIEW IMAGE
+   ============================================ */
+.osds3d-preview-image {
+    max-width: 150px;
+    max-height: 150px;
+    border: 1px solid var(--osds3d-border);
+    border-radius: 4px;
+    padding: 5px;
+}
+
+/* ============================================
+   PAGINATION
+   ============================================ */
+.osds3d-pagination {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.osds3d-pagination a,
+.osds3d-pagination span {
+    padding: 8px 12px;
+    border: 1px solid var(--osds3d-border);
+    border-radius: 4px;
+    text-decoration: none;
+    color: var(--osds3d-dark);
+    transition: all 0.3s ease;
+}
+
+.osds3d-pagination a:hover {
+    background: var(--osds3d-primary);
+    color: #fff;
+    border-color: var(--osds3d-primary);
+}
+
+.osds3d-pagination .current {
+    background: var(--osds3d-primary);
+    color: #fff;
+    border-color: var(--osds3d-primary);
+}
+
+/* ============================================
+   MODAL
+   ============================================ */
+.osds3d-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999998;
+    animation: fadeIn 0.3s ease;
+}
+
+.osds3d-modal.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.osds3d-modal-content {
+    background: #fff;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.osds3d-modal-header {
+    padding: 20px 30px;
+    border-bottom: 1px solid var(--osds3d-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.osds3d-modal-title {
+    margin: 0;
+    font-size: 20px;
+    color: var(--osds3d-dark);
+}
+
+.osds3d-modal-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #646970;
+}
+
+.osds3d-modal-close:hover {
+    color: var(--osds3d-danger);
+}
+
+.osds3d-modal-body {
+    padding: 30px;
+}
+
+.osds3d-modal-footer {
+    padding: 20px 30px;
+    border-top: 1px solid var(--osds3d-border);
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+/* ============================================
+   UTILITAIRES
+   ============================================ */
+.osds3d-text-center {
+    text-align: center;
+}
+
+.osds3d-text-right {
+    text-align: right;
+}
+
+.osds3d-mt-10 {
+    margin-top: 10px;
+}
+
+.osds3d-mt-20 {
+    margin-top: 20px;
+}
+
+.osds3d-mb-10 {
+    margin-bottom: 10px;
+}
+
+.osds3d-mb-20 {
+    margin-bottom: 20px;
+}
+
+.osds3d-hidden {
+    display: none !important;
+}
+
+.osds3d-visible {
+    display: block !important;
+}
